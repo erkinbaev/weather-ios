@@ -27,6 +27,6 @@ extension SplashController: SplashDelegate {
     }
     
     func showCitySearch() {
-        navigationController?.pushViewController(SearchController.newInstanse(), animated: true)
+        navigationController?.pushViewController(SearchController(), animated: true)
     }
 }

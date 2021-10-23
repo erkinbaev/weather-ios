@@ -21,10 +21,13 @@ class SplashViewModel: BaseViewModel {
     }
     
     func navigations() {
-        if dataBase.getAllCity()?.count ?? 0 > 0 {
-            delegate?.showMain()
-        } else {
-            delegate?.showCitySearch()
-        }
+        delegate?.showCitySearch()
+
+        
+//        if dataBase.getAllCity()?.count ?? 0 > 0 {
+//            delegate?.showMain()
+//        } else {
+//            delegate?.showCitySearch()
+//        }
     }
 }

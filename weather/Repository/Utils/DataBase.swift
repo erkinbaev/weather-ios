@@ -23,6 +23,16 @@ class DataBase {
         return realm?.objects(CityDataBaseModel.self)
     }
     
+    func deleteAllCitys() {
+        do {
+            try realm?.write {
+                realm?.deleteAll()
+            }
+        } catch {
+            print("Error DataBase CityDataBaseModel not all delete")
+        }
+    }
+    
     func saveCityModels(model: CityDataBaseModel) {
         do {
             try realm?.write {

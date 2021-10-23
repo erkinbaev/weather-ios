@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ApiClientRepository {
+class ApiClientRepository: ApiClientStatement {
     
     private static var repository = ApiClientRepository()
     
@@ -30,4 +30,9 @@ class ApiClientRepository {
     func getFiveDaysOfDailyForecasts(cityKey: Int, completionHandler: @escaping ([SearchResponseModel]?, String?) -> Void)  {
        
     }
+}
+
+protocol ApiClientStatement {
+    func getAutocompleteSearch(search: String, completionHandler: @escaping ([SearchResponseModel]?, String?) -> Void)
+    func getFiveDaysOfDailyForecasts(cityKey: Int, completionHandler: @escaping ([SearchResponseModel]?, String?) -> Void)
 }

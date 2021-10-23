@@ -7,86 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7921C7B-C2AB-4C4E-B26E-4147FE8D2020"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "weather/UI/Search/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "searchCity(text:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2FFB30AC-6BFB-47CF-A3FB-8519AC093219"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "weather/UI/Search/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "searchCity(text:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2A07AB26-4554-468D-9758-C879F75FB323"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "weather/UI/Search/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "searchCity(text:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2A07AB26-4554-468D-9758-C879F75FB323 - a1c8d8738b572256"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;weather.SearchResponseModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in weather.SearchViewModel.searchCity(text: Swift.String) -&gt; ()"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Documents/weather/weather/UI/Search/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "202">
-               </Location>
-               <Location
-                  uuid = "2A07AB26-4554-468D-9758-C879F75FB323 - e45a5e17579b39f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;weather.SearchResponseModel&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in weather.SearchViewModel.searchCity(text: Swift.String) -&gt; ()"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Documents/weather/weather/UI/Search/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "8223B207-EB7D-4558-9C1B-F937B27AACCE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -94,8 +14,8 @@
             filePath = "weather/UI/Search/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "searchCity(text:)"
             landmarkType = "7">
             <Locations>
@@ -285,8 +205,8 @@
             filePath = "weather/UI/Search/SearchController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "showError(text:)"
             landmarkType = "7">
          </BreakpointContent>

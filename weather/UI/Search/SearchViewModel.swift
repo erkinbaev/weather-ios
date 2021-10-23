@@ -6,16 +6,20 @@
 //
 
 import Foundation
+import RealmSwift
 
 protocol SearchDelegate: AnyObject {
-    func showMain()
     func showError(text: String)
-    func showResult(result: [SearchResponseModel])
+    func showResult()
+    func showSaveCitys() 
 }
 
 class SearchViewModel: BaseViewModel {
     
     private weak var delegate: SearchDelegate? = nil
+    
+    var saveCitys: Results<CityDataBaseModel>? = nil
+    var result: [SearchResponseModel] = []
     
     init(delegate: SearchDelegate) {
         self.delegate = delegate
@@ -24,22 +28,25 @@ class SearchViewModel: BaseViewModel {
     func saveCity(model: SearchResponseModel) {
         dataBase.saveCity(model: model.convertToDataBaseModel())
         
-        delegate?.showMain()
+        delegate?.showSaveCitys()
     }
      
+    func getAllCitys()  {
+        saveCitys = dataBase.getAllCity()
+    }
+    
     func searchCity(text: String) {
         apiClient.getAutocompleteSearch(search: text) { [self] model, error in
-            
-            DispatchQueue.main.async {
-                if let model = model {
-                    if model.count > 0 {
-                        delegate?.showResult(result: model)
-                    } else {
-                        delegate?.showError(text: "Not found city")
-                    }
+            if let model = model {
+                if model.count > 0 {
+                    result = model
+                    
+                    delegate?.showResult()
                 } else {
-                    delegate?.showError(text: "Network not work")
+                    delegate?.showError(text: "Not found city")
                 }
+            } else {
+                delegate?.showError(text: "Network not work")
             }
         }
     }

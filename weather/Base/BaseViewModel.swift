@@ -8,6 +8,6 @@
 import Foundation
 
 class BaseViewModel {
-    var apiClient = ApiClientRepository.newInstanse()
-    var dataBase = DataBaseRepository.newInstanse()
+    var apiClient: ApiClientStatement = ApiClientRepository.newInstanse()
+    var dataBase: DataBaseStatement = DataBaseRepository.newInstanse()
 }

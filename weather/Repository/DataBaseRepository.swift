@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class DataBaseRepository {
+class DataBaseRepository: DataBaseStatement {
 
     private static var repository = DataBaseRepository()
     
@@ -18,6 +18,10 @@ class DataBaseRepository {
         return repository
     }
     
+    func deleteAllCitys() {
+        dataBase.deleteAllCitys()
+    }
+    
     func getAllCity() -> Results<CityDataBaseModel>? {
         return dataBase.getCityModels()
     }
@@ -25,4 +29,10 @@ class DataBaseRepository {
     func saveCity(model: CityDataBaseModel) {
         dataBase.saveCityModels(model: model)
     }
+}
+
+protocol DataBaseStatement {
+    func deleteAllCitys()
+    func getAllCity() -> Results<CityDataBaseModel>?
+    func saveCity(model: CityDataBaseModel)
 }
